@@ -10,17 +10,16 @@
 	<script>
 		function secondHighest(arr) {
 			 let n=arr.length;
-			 if(n==0){
+			    if(n==0){
         return "undefined"
     }
-    if(n==1){
+   else if(n==1){
         return "undefined"
     }
-
-			
-     arr.sort();
-     return arr[n-2];
-			
+  else  if(n>1){
+        arr.sort();
+        return arr[n-2];
+    }
 		}
 
 		function Main() {
